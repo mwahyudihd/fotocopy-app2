@@ -25,7 +25,7 @@ class _ProdukDetailState extends State<ProdukDetail> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/produk/${widget.isId.toString()}'));
+          'https://hafiz.barudakkoding.com/fotocopy-api/public/produk/${widget.isId}'));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {
@@ -91,7 +91,7 @@ class _ProdukDetailState extends State<ProdukDetail> {
                       height: 15.0,
                     ),
                     Text(
-                      'Kode Barang/Produk : ${_listdata[0]["kode"]}',
+                      'Kode Barang/Produk : ${_listdata[0]["kode_produk"]}',
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
                     SizedBox(
@@ -117,15 +117,13 @@ class _ProdukDetailState extends State<ProdukDetail> {
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.red),
                           onPressed: () {
-                            final String idSaver = _listdata[0]['id_produk'];
-                            final String kodeSaver = _listdata[0]['kode'];
+                            final String idSaver = _listdata[0]['kode_produk'];
                             final String namaSaver = _listdata[0]['nama'];
                             final String hargaSaver = _listdata[0]['harga'];
                             final String stokSaver = _listdata[0]['stok'];
                             Navigator.of(context).push(MaterialPageRoute(
                                 builder: (context) => StokFormRemove(
                                       getId: idSaver,
-                                      getKode: kodeSaver,
                                       getNama: namaSaver,
                                       getHarga: hargaSaver,
                                       getStok: stokSaver,
@@ -147,15 +145,13 @@ class _ProdukDetailState extends State<ProdukDetail> {
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.brown),
                           onPressed: () {
-                            final String idSaver = _listdata[0]['id_produk'];
-                            final String kodeSaver = _listdata[0]['kode'];
+                            final String idSaver = _listdata[0]['kode_produk'];
                             final String namaSaver = _listdata[0]['nama'];
                             final String hargaSaver = _listdata[0]['harga'];
                             final String stokSaver = _listdata[0]['stok'];
                             Navigator.of(context).push(MaterialPageRoute(
                                 builder: (context) => StokFormPlus(
                                       getId: idSaver,
-                                      getKode: kodeSaver,
                                       getNama: namaSaver,
                                       getHarga: hargaSaver,
                                       getStok: stokSaver,

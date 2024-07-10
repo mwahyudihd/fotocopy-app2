@@ -110,7 +110,7 @@ class _LocationTrackingState extends State<LocationTracking> {
         ),
         centerTitle: true,
         backgroundColor: Colors.brown,
-        title: const Text("Absensi"),
+        title: const Text("Absensi", style: TextStyle(color: Colors.amberAccent),),
       ),
       body: Center(
         child: Column(

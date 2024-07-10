@@ -127,6 +127,21 @@ class _TabelPage2State extends State<TabelPage2> {
                           DataColumn(
                             label: Flexible(child: Text('alamat')),
                           ),
+                          DataColumn(
+                            label: Flexible(child: Text('status')),
+                          ),
+                          DataColumn(
+                            label: Flexible(child: Text('Jumlah unit')),
+                          ),
+                          DataColumn(
+                            label: Flexible(child: Text('kode unit')),
+                          ),
+                          DataColumn(
+                            label: Flexible(child: Text('kategori')),
+                          ),
+                          DataColumn(
+                            label: Flexible(child: Text('create_on')),
+                          ),
                           DataColumn(label: Flexible(child: Text('Del'))),
                           DataColumn(label: Flexible(child: Text('Edit'))),
                         ],
@@ -137,6 +152,11 @@ class _TabelPage2State extends State<TabelPage2> {
                               DataCell(Text(item['nama_pelanggan'])),
                               DataCell(Text(item['jenis_pesanan'])),
                               DataCell(Text(item['alamat'])),
+                              DataCell(Text(item['status'])),
+                              DataCell(Text(item['jumlah_unit'])),
+                              DataCell(Text(item['kode_unit'])),
+                              DataCell(Text(item['kategori'])),
+                              DataCell(Text(item['create_on'])),
                               DataCell(
                                 Container(
                                   decoration: BoxDecoration(
@@ -239,14 +259,27 @@ class _TabelPage2State extends State<TabelPage2> {
                                       final jenispesanan =
                                           item['jenis_pesanan'];
                                       final alamat = item['alamat'];
+                                      final status = item['status'];
+                                      final jmlUnit = item['jumlah_unit'];
+                                      final kdUnit = item['kode_unit'];
+                                      final kategori = item['kategori'];
+                                      final kodePesan = item['kode_pesanan'];
+                                      final hargaUnit = item['harga_unit'];
                                       Navigator.of(context).push(
                                           MaterialPageRoute(
                                               builder: (context) =>
                                                   PelangganEdit(
-                                                      isId: idpelanggan,
-                                                      isNama: namapelanggan,
-                                                      isJenis: jenispesanan,
-                                                      isAlamat: alamat)));
+                                                    isId: idpelanggan,
+                                                    isNama: namapelanggan,
+                                                    isJenis: jenispesanan,
+                                                    isAlamat: alamat,
+                                                    isJmlUnit: jmlUnit,
+                                                    isKodePesanan: kodePesan,
+                                                    isKodeUnit: kdUnit,
+                                                    isStatus: status,
+                                                    isKategori: kategori,
+                                                    isHarga: hargaUnit,
+                                                  )));
                                     },
                                   ),
                                 ),

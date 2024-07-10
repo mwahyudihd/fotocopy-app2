@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fotocopy_app/pages/absensi/tabel_absen%20_all.dart';
 import 'home_page.dart';
 import 'package:fotocopy_app/pages/pegawai/pegawai_page.dart';
 import 'package:fotocopy_app/pages/pelanggan/tabel_page.dart';
@@ -166,7 +167,7 @@ class SecondPage extends StatelessWidget {
                   onTap: () {
                     Navigator.pushAndRemoveUntil(
                         context,
-                        MaterialPageRoute(builder: ((context) => HomePage())),
+                        MaterialPageRoute(builder: ((context) => TabelAbsenAll())),
                         (route) => false);
                   },
                   child: Container(
@@ -181,7 +182,7 @@ class SecondPage extends StatelessWidget {
                         color: Colors.brown,
                         shape: BoxShape.rectangle,
                         image: DecorationImage(
-                          image: AssetImage('assets/inprogress.png'),
+                          image: AssetImage('assets/absen.jpg'),
                         )),
                   ),
                 ),

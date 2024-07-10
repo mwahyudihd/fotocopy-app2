@@ -7,14 +7,14 @@ import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:path_provider/path_provider.dart';
 
-class TabelAbsen extends StatefulWidget {
-  const TabelAbsen({super.key});
+class TabelAbsenAll extends StatefulWidget {
+  const TabelAbsenAll({super.key});
 
   @override
-  State<TabelAbsen> createState() => _TabelAbsenState();
+  State<TabelAbsenAll> createState() => _TabelAbsenAllState();
 }
 
-class _TabelAbsenState extends State<TabelAbsen> {
+class _TabelAbsenAllState extends State<TabelAbsenAll> {
   List _listdata = [];
   bool _isDownload = false;
   bool _loaddata = true;
@@ -32,7 +32,7 @@ class _TabelAbsenState extends State<TabelAbsen> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/absen/$_userId'));
+          'https://hafiz.barudakkoding.com/fotocopy-api/public/absen/'));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {
@@ -77,7 +77,7 @@ class _TabelAbsenState extends State<TabelAbsen> {
     );
 
     final downloadsDirectory = Directory('/storage/emulated/0/Download');
-    final file = File("${downloadsDirectory.path}/data_absen.pdf");
+    final file = File("${downloadsDirectory.path}/data_absen_All.pdf");
     await file.writeAsBytes(await pdf.save());
 
     ScaffoldMessenger.of(context).showSnackBar(

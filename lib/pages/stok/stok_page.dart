@@ -111,7 +111,7 @@ class _StokPageState extends State<StokPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'KODE : ${_listdata[index]['kode'].toString().limitize()}', 
+                                      'KODE : ${_listdata[index]['kode_produk'].toString().limitize()}', 
                                       style: TextStyle(
                                         fontSize: 18,
                                         color: Colors.black,
@@ -130,7 +130,7 @@ class _StokPageState extends State<StokPage> {
                                           backgroundColor: Colors.brown),
                                       onPressed: () async {
                                         final idProduk = _listdata[index]
-                                                ['id_produk']
+                                                ['kode_produk']
                                             .toString();
                                         Navigator.of(context).push(
                                             MaterialPageRoute(

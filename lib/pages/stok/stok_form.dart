@@ -5,7 +5,6 @@ import 'package:http/http.dart' as http;
 import 'package:fotocopy_app/pages/stok/stok_detail.dart';
 
 class StokFormPlus extends StatefulWidget {
-  final String? getKode;
   final String? getNama;
   final String? getHarga;
   final String? getStok;
@@ -14,7 +13,6 @@ class StokFormPlus extends StatefulWidget {
   const StokFormPlus(
       {super.key,
       this.getId,
-      this.getKode,
       this.getNama,
       this.getHarga,
       this.getStok});
@@ -43,7 +41,6 @@ class _StokFormPlusState extends State<StokFormPlus> {
   @override
   void initState() {
     super.initState();
-    codeSet = widget.getKode ?? '';
     nameSet = widget.getNama ?? '';
     priceSet = widget.getHarga ?? '';
     stokSet = widget.getStok ?? '';
@@ -58,7 +55,6 @@ class _StokFormPlusState extends State<StokFormPlus> {
         'Content-Type': 'application/json; charset=UTF-8',
       },
       body: jsonEncode(<String, String>{
-        "kode": codeSet,
         "nama": nameSet,
         "harga": priceSet,
         "stok": totalStok.toString()
