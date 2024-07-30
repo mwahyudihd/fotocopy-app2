@@ -22,13 +22,6 @@ This application is developed using Flutter, providing a seamless and engaging u
 - Printing reports
 
 
-## Acknowledgements
-
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-
-
 ## Screenshots
 here are some images / screenshots of the UI Features of the application :
 ![App Main Menu](https://barudakkoding.com/barudakkoding.storage.com/repo/images/main-menu.jpeg)
@@ -45,3 +38,5 @@ If you have any feedback, please reach out to us at wawprjct@gmail.com
 The Project Licensed : 
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/mwahyudihd/fotocopy-app2/tree/master?tab=MIT-1-ov-file)
+
+
