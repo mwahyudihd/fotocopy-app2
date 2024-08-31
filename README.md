@@ -30,7 +30,7 @@ here are some images / screenshots of the UI Features of the application : <br>
 <img src="https://github.com/user-attachments/assets/42e9df6f-73b6-44d2-b95f-f9537d7c570f" alt="App Employee / User Manager" width="300"/>
 ## Feedback
 
-If you have any feedback, please reach out to us at wawprjct@gmail.com
+If you have any feedback, please reach out to us at [![GMAIL](https://skillicons.dev/icons?i=gmail)](wawprjct@gmail.com)
 
 
 ## License
