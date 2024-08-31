@@ -24,10 +24,10 @@ This application is developed using Flutter, providing a seamless and engaging u
 
 ## Screenshots
 here are some images / screenshots of the UI Features of the application :
-![App Main Menu](https://barudakkoding.com/barudakkoding.storage.com/repo/images/main-menu.jpeg)
-![App Master Data](https://barudakkoding.com/barudakkoding.storage.com/repo/images/master-data.jpeg)
-![App Stock Manager](https://barudakkoding.com/barudakkoding.storage.com/repo/images/stok-manager.jpeg)
-![App Employee / User Manager](https://barudakkoding.com/barudakkoding.storage.com/repo/images/employee-manager.jpeg)
+![App Main Menu](https://github.com/user-attachments/assets/d971b854-9813-4462-96e7-22b1e8cd4b50)
+![App Master Data](https://github.com/user-attachments/assets/9bed8fdb-23de-43d5-952d-acebbbf7208c)
+![App Stock Manager](https://github.com/user-attachments/assets/81d9fd29-f1b7-408c-87c7-ca6ef457c31d)
+![App Employee / User Manager](https://github.com/user-attachments/assets/172ddf1a-f19b-4129-bdf6-f522ce627805)
 ## Feedback
 
 If you have any feedback, please reach out to us at wawprjct@gmail.com
