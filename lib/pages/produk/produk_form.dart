@@ -23,7 +23,7 @@ class _ProdukFormState extends State<ProdukForm> {
   TextEditingController stok = TextEditingController(text: '10');
   Future _simpan() async {
     final response = await http.post(
-        Uri.parse('https://hafiz.barudakkoding.com/fotocopy-api/public/produk'),
+        Uri.parse('https://wahyudi.barudakkoding.com/fotocopy-api/public/produk'),
         body: {
           "kode": kode.text.toUpperCase(),
           "nama": nama.text.capitalize(),

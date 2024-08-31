@@ -50,7 +50,7 @@ class _ProdukEditState extends State<ProdukEdit> {
   Future _simpan() async {
     final response = await http.put(
       Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/produk/${widget.isId}'),
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/produk/${widget.isId}'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },

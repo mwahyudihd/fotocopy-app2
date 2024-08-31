@@ -20,7 +20,7 @@ class _UidSelectState extends State<UidSelect> {
     try {
       var uid = _uidController.text.toString();
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pegawai/${uid.toUpperCase()}'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pegawai/${uid.toUpperCase()}'));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {

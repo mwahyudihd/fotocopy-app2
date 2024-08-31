@@ -25,7 +25,7 @@ class _ProdukDetailState extends State<ProdukDetail> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/produk/${widget.isId}'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/produk/${widget.isId}'));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {

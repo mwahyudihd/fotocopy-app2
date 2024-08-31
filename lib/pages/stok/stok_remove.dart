@@ -49,7 +49,7 @@ class _StokFormRemoveState extends State<StokFormRemove> {
     final int totalStok = int.parse(stokSet) - int.parse(stock.text);
     final response = await http.put(
       Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/produk/${widget.getId}'),
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/produk/${widget.getId}'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },

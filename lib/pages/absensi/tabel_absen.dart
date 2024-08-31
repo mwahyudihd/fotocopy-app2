@@ -32,7 +32,7 @@ class _TabelAbsenState extends State<TabelAbsen> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/absen/$_userId'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/absen/$_userId'));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {

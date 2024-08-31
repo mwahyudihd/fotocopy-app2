@@ -46,7 +46,7 @@ class _JasaEditState extends State<JasaEdit> {
   Future _simpan() async {
     final response = await http.put(
       Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/jasa/${widget.isId}'),
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/jasa/${widget.isId}'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },

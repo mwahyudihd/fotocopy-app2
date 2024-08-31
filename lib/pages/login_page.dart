@@ -17,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Future<void> _login() async {
     final String apiUrl =
-        'https://hafiz.barudakkoding.com/fotocopy-api/public/login';
+        'https://wahyudi.barudakkoding.com/fotocopy-api/public/login';
 
     final response = await http.post(
       Uri.parse(apiUrl),

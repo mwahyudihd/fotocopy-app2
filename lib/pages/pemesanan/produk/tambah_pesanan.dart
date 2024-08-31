@@ -51,7 +51,7 @@ class _TambahPesananState extends State<TambahPesanan> {
         int.parse(widget.isStok.toString()) - int.parse(jumlah.text);
     final response = await http.put(
       Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/produk/${widget.isId}'),
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/produk/${widget.isId}'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },
@@ -70,7 +70,7 @@ class _TambahPesananState extends State<TambahPesanan> {
   Future _simpan() async {
     final response = await http.post(
         Uri.parse(
-            'https://hafiz.barudakkoding.com/fotocopy-api/public/pelanggan'),
+            'https://wahyudi.barudakkoding.com/fotocopy-api/public/pelanggan'),
         body: {
           "nama_pelanggan": nama.text.capitalize(),
           "jenis_pesanan": jenis.text.capitalize(),

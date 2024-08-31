@@ -23,7 +23,7 @@ class _PegawaiFormState extends State<PegawaiForm> {
 
   Future _simpan() async {
     final response = await http
-        .post(Uri.parse('https://hafiz.barudakkoding.com/fotocopy-api/public/pegawai'), body: {
+        .post(Uri.parse('https://wahyudi.barudakkoding.com/fotocopy-api/public/pegawai'), body: {
       "nama_pegawai": nama.text.capitalize(),
       "no_tlp": '08',
       "gender": gender.text,

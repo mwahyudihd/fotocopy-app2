@@ -23,7 +23,7 @@ class _JasaTransaksiState extends State<JasaTransaksi> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pelanggan_status_js/belum'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pelanggan_status_js/belum'));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {
@@ -55,7 +55,7 @@ class _JasaTransaksiState extends State<JasaTransaksi> {
   Future _updateStatusPelanggan() async {
     final response = await http.put(
       Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pelanggan_status/$_idSelect'),
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pelanggan_status/$_idSelect'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },

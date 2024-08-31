@@ -23,7 +23,7 @@ class _RiwayatPesananJasaState extends State<RiwayatPesananJasa> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pelanggan_status_js/selesai'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pelanggan_status_js/selesai'));
       if (response.statusCode == 200) {
         // print(response.body);
         final data = jsonDecode(response.body);

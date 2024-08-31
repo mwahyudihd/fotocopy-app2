@@ -23,7 +23,7 @@ class _PegawaiDetailState extends State<PegawaiDetail> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pegawai/${widget.isId.toString()}'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pegawai/${widget.isId.toString()}'));
       if (response.statusCode == 200) {
         // print(response.body);
         final data = jsonDecode(response.body);
@@ -47,7 +47,7 @@ class _PegawaiDetailState extends State<PegawaiDetail> {
   Future _remove() async {
     try {
       final response = await http.delete(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pegawai/${_listdata[0]["id_pegawai"].toString()}'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pegawai/${_listdata[0]["id_pegawai"].toString()}'));
       if (response.statusCode == 200) {
         _isloading = true;
       }

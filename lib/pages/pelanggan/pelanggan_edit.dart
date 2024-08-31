@@ -82,7 +82,7 @@ class _PelangganEditState extends State<PelangganEdit> {
   Future _simpan() async {
     final response = await http.put(
       Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pelanggan/${widget.isId}'),
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pelanggan/${widget.isId}'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },

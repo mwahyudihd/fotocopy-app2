@@ -28,7 +28,7 @@ class _StokPageState extends State<StokPage> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/produk/'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/produk/'));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {

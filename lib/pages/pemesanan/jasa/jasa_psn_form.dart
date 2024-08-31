@@ -44,7 +44,7 @@ class _JasaPsnFormState extends State<JasaPsnForm> {
   Future _simpan() async {
     final response = await http.post(
         Uri.parse(
-            'https://hafiz.barudakkoding.com/fotocopy-api/public/pelanggan'),
+            'https://wahyudi.barudakkoding.com/fotocopy-api/public/pelanggan'),
         body: {
           "nama_pelanggan": nama.text,
           "jenis_pesanan": jenis.text,

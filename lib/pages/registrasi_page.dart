@@ -176,7 +176,7 @@ class _RegistrasiPageState extends State<RegistrasiPage> {
   Future _simpan() async {
     final response = await http.put(
       Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pegawai/${widget.getId}'),
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pegawai/${widget.getId}'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },

@@ -25,7 +25,7 @@ class _ListRiwayatPesananProdukState extends State<ListRiwayatPesananProduk> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pelanggan_status_pdk/selesai'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pelanggan_status_pdk/selesai'));
       if (response.statusCode == 200) {
         // print(response.body);
         final data = jsonDecode(response.body);

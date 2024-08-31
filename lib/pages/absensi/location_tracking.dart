@@ -33,7 +33,7 @@ class _LocationTrackingState extends State<LocationTracking> {
 
   Future _simpan() async {
     final response = await http.post(
-        Uri.parse('https://hafiz.barudakkoding.com/fotocopy-api/public/absen'),
+        Uri.parse('https://wahyudi.barudakkoding.com/fotocopy-api/public/absen'),
         body: {
           "uid": _userId,
           "nama": widget.setNama,
@@ -217,7 +217,7 @@ class _LocationTrackingState extends State<LocationTracking> {
 
   Future _submit() async {
     final response = await http.post(
-        Uri.parse('https://hafiz.barudakkoding.com/fotocopy-api/public/absen'),
+        Uri.parse('https://wahyudi.barudakkoding.com/fotocopy-api/public/absen'),
         body: {
           "uid": "",
           "nama": "",

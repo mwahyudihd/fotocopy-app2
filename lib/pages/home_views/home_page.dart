@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pegawai/${_userId.toString()}'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pegawai/${_userId.toString()}'));
       if (response.statusCode == 200) {
         // print(response.body);
         final data = jsonDecode(response.body);

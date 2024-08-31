@@ -29,7 +29,7 @@ class _PegawaiPageState extends State<PegawaiPage> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pegawai/'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pegawai/'));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {

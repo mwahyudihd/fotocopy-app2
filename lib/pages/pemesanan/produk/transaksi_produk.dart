@@ -23,7 +23,7 @@ class _ListPesananProdukState extends State<ListPesananProduk> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pelanggan_status_pdk/belum'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pelanggan_status_pdk/belum'));
       if (response.statusCode == 200) {
         // print(response.body);
         final data = jsonDecode(response.body);
@@ -56,7 +56,7 @@ class _ListPesananProdukState extends State<ListPesananProduk> {
   Future _updateStatusProduk() async {
     final response = await http.put(
       Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/pelanggan_status/$_idSelect'),
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/pelanggan_status/$_idSelect'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },

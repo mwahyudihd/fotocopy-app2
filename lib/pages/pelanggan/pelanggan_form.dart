@@ -30,7 +30,7 @@ class _PelangganFormState extends State<PelangganForm> {
   Future _simpan() async {
     final response = await http.post(
         Uri.parse(
-            'https://hafiz.barudakkoding.com/fotocopy-api/public/pelanggan'),
+            'https://wahyudi.barudakkoding.com/fotocopy-api/public/pelanggan'),
         body: {
           "nama_pelanggan": nama.text.capitalize(),
           "jenis_pesanan": jenis.text.capitalize(),

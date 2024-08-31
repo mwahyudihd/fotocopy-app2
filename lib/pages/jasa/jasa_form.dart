@@ -22,7 +22,7 @@ class _JasaFormState extends State<JasaForm> {
   TextEditingController pegawai = TextEditingController();
   Future _simpan() async {
     final response = await http.post(
-        Uri.parse('https://hafiz.barudakkoding.com/fotocopy-api/public/jasa'),
+        Uri.parse('https://wahyudi.barudakkoding.com/fotocopy-api/public/jasa'),
         body: {
           "nama_jasa": nama.text.capitalize(),
           "harga": harga.text,

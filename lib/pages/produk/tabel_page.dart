@@ -20,7 +20,7 @@ class _TabelPage1State extends State<TabelPage1> {
   Future _getdata() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/produk'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/produk'));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {
@@ -36,7 +36,7 @@ class _TabelPage1State extends State<TabelPage1> {
   Future _remove() async {
     try {
       final response = await http.delete(Uri.parse(
-          'https://hafiz.barudakkoding.com/fotocopy-api/public/produk/${_selectedId.toString()}'));
+          'https://wahyudi.barudakkoding.com/fotocopy-api/public/produk/${_selectedId.toString()}'));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {
