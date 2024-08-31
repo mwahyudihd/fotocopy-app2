@@ -31,7 +31,7 @@ here are some images / screenshots of the UI Features of the application : <br>
 ## Feedback
 
 If you have any feedback, please reach out to us at <br>
-[![GMAIL](https://skillicons.dev/icons?i=gmail)](wawprjct@gmail.com)
+[![GMAIL](https://skillicons.dev/icons?i=gmail)](mailto:wawprjct@gmail.com)
 
 
 ## License
