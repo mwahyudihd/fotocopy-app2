@@ -27,7 +27,7 @@ here are some images / screenshots of the UI Features of the application : <br>
 <img src="https://github.com/user-attachments/assets/c10bb385-cd6e-4df1-af97-5b9c133b6e76" alt="App Main Menu" width="300"/>
 <img src="https://github.com/user-attachments/assets/a27112fc-00bd-4893-9a9d-ebcd19cc19d2" alt="App Master Data" width="300"/>
 <img src="https://github.com/user-attachments/assets/9b02af4f-dc9c-4ca8-9c00-5d37028ac695" alt="App Stock Manager" width="300"/>
-<img src="https://github.com/user-attachments/assets/172ddf1a-f19b-4129-bdf6-f522ce627805" alt="App Employee / User Manager" width="300"/>
+<img src="https://github.com/user-attachments/assets/42e9df6f-73b6-44d2-b95f-f9537d7c570f" alt="App Employee / User Manager" width="300"/>
 ## Feedback
 
 If you have any feedback, please reach out to us at wawprjct@gmail.com
