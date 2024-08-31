@@ -24,10 +24,10 @@ This application is developed using Flutter, providing a seamless and engaging u
 
 ## Screenshots
 here are some images / screenshots of the UI Features of the application :
-![App Main Menu](https://github.com/user-attachments/assets/d971b854-9813-4462-96e7-22b1e8cd4b50)
-![App Master Data](https://github.com/user-attachments/assets/9bed8fdb-23de-43d5-952d-acebbbf7208c)
-![App Stock Manager](https://github.com/user-attachments/assets/81d9fd29-f1b7-408c-87c7-ca6ef457c31d)
-![App Employee / User Manager](https://github.com/user-attachments/assets/172ddf1a-f19b-4129-bdf6-f522ce627805)
+<img src="https://github.com/user-attachments/assets/d971b854-9813-4462-96e7-22b1e8cd4b50" alt="App Main Menu" width="300"/>
+<img src="https://github.com/user-attachments/assets/9bed8fdb-23de-43d5-952d-acebbbf7208c" alt="App Master Data" width="300"/>
+<img src="https://github.com/user-attachments/assets/81d9fd29-f1b7-408c-87c7-ca6ef457c31d" alt="App Stock Manager" width="300"/>
+<img src="https://github.com/user-attachments/assets/172ddf1a-f19b-4129-bdf6-f522ce627805" alt="App Employee / User Manager" width="300"/>
 ## Feedback
 
 If you have any feedback, please reach out to us at wawprjct@gmail.com
